@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+}
+#Container {
+    width: 100;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 150px;
+    
+}
+.listitems{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration-line: none;
+    color: blue;
+    font-weight: 600;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+
+}
+#username{
+    font-family:"princess sofia",cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lname{
+    font-family: "princess sofia",Cursive;
+    color: green;
+}
+#user-details{
+            line-height: 1.5;
+}
+#download{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
