@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    /* ithin akath ulla content nte width&hight mng cheyyan */
+}
+#container{
+     width: 100%;
+     height: 100vh;
+     position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* spce btvn - rnd side l aakan content */
+    align-items: center;
+    margin-left: 50px;
+}
+.logo{
+     width:"440px";
+    height:"300px";   
+}
+.item_1{
+    list-style: none; 
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 700px;
+}
+/* pseudo class use chyth */
+.links:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.homecontents{
+    margin: 13% 0px 0px 8% ;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#iname{
+    color: chocolate;
+}
+#userdetails{
+    line-height: 2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.homeimages{
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.grp1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    /* -50 kodukumpol left and top move aaku. bottom 0px koduthal bottom ....... */
+    transition: bottom 1s,left 2s;
+}
+.homeimages:hover #shape{
+      bottom: 80px;
+       /* grp1 le bottom and ithile bottom kodukumpol 0 il ninn 80px melott neengum */
+}
+.homeimages:hover #girl{
+    left:30%;
+    /* grp1 le left and ithile left kodukumpol 50 il ninn 30 ilott neengum */
+
+}
+#about{
+    margin:15% 8% 0px 8%
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 30px;
+}
+.subhead{
+    font-size: 20px;
+    color:green;
+}
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    /* grid
+    *flex chyan use cheyyuna vere oru method 
+    */
+    grid-template-columns: repeat(2,1fr);
+     /* repeat(2,1fr);-2 times 1fr repeat chythu */
+    gap: 50px;
+    /* gap use chyunth top column idayil space varan */
+    align-items: center;
+    /* vertically same reethi varan */
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.aboutimg>img{
+   width: 80%;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 40px;
+    align-items: center;
+}
+#myskillimg{
+    width: 100%;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+.barhead,.barpercent{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.basebar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 92%;
+}
+.cssbar{
+    background-color: orange;
+    width: 90%;
+}
+.jsbar{
+    background-color: orange;
+    width: 88%;
+}
+.reactbar{
+    background-color: orange;
+    width: 77%;
+}
+#contact{
+    margin: 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    /* border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 42), rgb(254, 254, 254), rgb(255, 30, 0));
+    /* font-size: 20px; */
+}
+.brands{
+    color: black;
+    font-size: 30px;
+}
+.brands:hover{
+    color: rgb(157, 18, 30);
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin: 8%;
+}
+#copyright{
+    font-weight: 600;
+    text-align: center;
+}
+.iconuparrow{
+        float: right;
+        margin: -40px 30px 30px 0px;
+}
